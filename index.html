@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="https://kit.fontawesome.com/8d23afc7c9.js" crossorigin="anonymous"></script>
+    <title>7 Wonders Scoresheet</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th><div class="name-div header-div"><img class="icon" src="icons/name.svg" alt="name"></div></th>
+            <th><div class="war-div header-div"><img class="icon" src="icons/war.svg" alt="war"></div></th>
+            <th><div class="money-div header-div"><img class="icon" src="icons/money.svg" alt="money"></div></th>
+            <th><div class="wonders-div header-div"><img class="icon" src="icons/wonders.svg" alt="wonders"></div></th>
+            <th><div class="blue-div header-div"><img class="icon" src="icons/blue.svg" alt="blue"></div></th>
+            <th><div class="yellow-div header-div"><img class="icon" src="icons/blue.svg" alt="blue"></div></th>
+            <th><div class="purple-div header-div"><img class="icon" src="icons/blue.svg" alt="blue"></div></th>
+            <th><div class="green-div header-div"><img class="icon" src="icons/blue.svg" alt="blue"></div></th>
+            <th><div class="sigma-div header-div"><img class="icon" src="icons/sigma.svg" alt="blue"></div></th>
+        </tr>
+        <tr>
+            <td><div class="name-div"><input id="name-1" type="text"></div></td>
+            <td><div class="war-div number-div"><input onblur="getVal()" type="number" name="war" id="war-1"></div></td>
+            <td><div class="money-div number-div"><input onblur="getVal()" type="number" name="money" id="money-1"></div></td>
+            <td><div class="wonders-div number-div"><input onblur="getVal()" type="number" name="wonders" id="wonders-1"></div></td>
+            <td><div class="blue-div number-div"><input onblur="getVal()" type="number" name="blue" id="blue-1"></div></td>
+            <td><div class="yellow-div number-div"><input onblur="getVal()" type="number" name="yellow" id="yellow-1"></div></td>
+            <td><div class="purple-div number-div"><input onblur="getVal()" type="number" name="purple" id="purple-1"></div></td>
+            <td><div class="green-div number-div"><input onblur="getVal()" type="number" name="green" id="green-1"></div></td>
+            <td><div class="sigma-div"><p id="sump1"></p></div></td>
+        </tr>
+        <tr>
+            <td><div class="name-div"><input id="name-2" type="text"></div></td>
+            <td><div class="war-div number-div"><input onblur="getVal2()" type="number" name="war" id="war-2"></div></td>
+            <td><div class="money-div number-div"><input onblur="getVal2()" type="number" name="money" id="money-2"></div></td>
+            <td><div class="wonders-div number-div"><input onblur="getVal2()" type="number" name="wonders" id="wonders-2"></div></td>
+            <td><div class="blue-div number-div"><input onblur="getVal2()" type="number" name="blue" id="blue-2"></div></td>
+            <td><div class="yellow-div number-div"><input onblur="getVal2()" type="number" name="yellow" id="yellow-2"></div></td>
+            <td><div class="purple-div number-div"><input onblur="getVal2()" type="number" name="purple" id="purple-2"></div></td>
+            <td><div class="green-div number-div"><input onblur="getVal2()" type="number" name="green" id="green-2"></div></td>
+            <td><div class="sigma-div"><p id="sump2"></p></div></td>
+        </tr>
+        <tr>
+            <td><div class="name-div"><input id="name-3" type="text"></div></td>
+            <td><div class="war-div number-div"><input onblur="getVal3()" type="number" name="war" id="war-3"></div></td>
+            <td><div class="money-div number-div"><input onblur="getVal3()" type="number" name="money" id="money-3"></div></td>
+            <td><div class="wonders-div number-div"><input onblur="getVal3()" type="number" name="wonders" id="wonders-3"></div></td>
+            <td><div class="blue-div number-div"><input onblur="getVal3()" type="number" name="blue" id="blue-3"></div></td>
+            <td><div class="yellow-div number-div"><input onblur="getVal3()" type="number" name="yellow" id="yellow-3"></div></td>
+            <td><div class="purple-div number-div"><input onblur="getVal3()" type="number" name="purple" id="purple-3"></div></td>
+            <td><div class="green-div number-div"><input onblur="getVal3()" type="number" name="green" id="green-3"></div></td>
+            <td><div class="sigma-div"><p id="sump3"></p></div></td>
+        </tr>
+        <tr>
+            <td><div class="name-div"><input id="name-4" type="text"></div></td>
+            <td><div class="war-div number-div"><input onblur="getVal4()" type="number" name="war" id="war-4"></div></td>
+            <td><div class="money-div number-div"><input onblur="getVal4()" type="number" name="money" id="money-4"></div></td>
+            <td><div class="wonders-div number-div"><input onblur="getVal4()" type="number" name="wonders" id="wonders-4"></div></td>
+            <td><div class="blue-div number-div"><input onblur="getVal4()" type="number" name="blue" id="blue-4"></div></td>
+            <td><div class="yellow-div number-div"><input onblur="getVal4()" type="number" name="yellow" id="yellow-4"></div></td>
+            <td><div class="purple-div number-div"><input onblur="getVal4()" type="number" name="purple" id="purple-4"></div></td>
+            <td><div class="green-div number-div"><input onblur="getVal4()" type="number" name="green" id="green-4"></div></td>
+            <td><div class="sigma-div"><p id="sump4"></p></div></td>
+        </tr>
+        <tr>
+            <td><div class="name-div"><input id="name-5" type="text"></div></td>
+            <td><div class="war-div number-div"><input onblur="getVal5()" type="number" name="war" id="war-5"></div></td>
+            <td><div class="money-div number-div"><input onblur="getVal5()" type="number" name="money" id="money-5"></div></td>
+            <td><div class="wonders-div number-div"><input onblur="getVal5()" type="number" name="wonders" id="wonders-5"></div></td>
+            <td><div class="blue-div number-div"><input onblur="getVal5()" type="number" name="blue" id="blue-5"></div></td>
+            <td><div class="yellow-div number-div"><input onblur="getVal5()" type="number" name="yellow" id="yellow-5"></div></td>
+            <td><div class="purple-div number-div"><input onblur="getVal5()" type="number" name="purple" id="purple-5"></div></td>
+            <td><div class="green-div number-div"><input onblur="getVal5()" type="number" name="green" id="green-5"></div></td>
+            <td><div class="sigma-div"><p id="sump5"></p></div></td>
+        </tr>
+        <tr>
+            <td><div class="name-div"><input id="name-6" type="text"></div></td>
+            <td><div class="war-div number-div"><input onblur="getVal6()" type="number" name="war" id="war-6"></div></td>
+            <td><div class="money-div number-div"><input onblur="getVal6()" type="number" name="money" id="money-6"></div></td>
+            <td><div class="wonders-div number-div"><input onblur="getVal6()" type="number" name="wonders" id="wonders-6"></div></td>
+            <td><div class="blue-div number-div"><input onblur="getVal6()" type="number" name="blue" id="blue-6"></div></td>
+            <td><div class="yellow-div number-div"><input onblur="getVal6()" type="number" name="yellow" id="yellow-6"></div></td>
+            <td><div class="purple-div number-div"><input onblur="getVal6()" type="number" name="purple" id="purple-6"></div></td>
+            <td><div class="green-div number-div"><input onblur="getVal6()" type="number" name="green" id="green-6"></div></td>
+            <td><div class="sigma-div"><p id="sump6"></p></div></td>
+        </tr>
+        <tr>
+            <td><div class="name-div"><input id="name-7" type="text"></div></td>
+            <td><div class="war-div number-div"><input onblur="getVal7()" type="number" name="war" id="war-7"></div></td>
+            <td><div class="money-div number-div"><input onblur="getVal7()" type="number" name="money" id="money-7"></div></td>
+            <td><div class="wonders-div number-div"><input onblur="getVal7()" type="number" name="wonders" id="wonders-7"></div></td>
+            <td><div class="blue-div number-div"><input onblur="getVal7()" type="number" name="blue" id="blue-7"></div></td>
+            <td><div class="yellow-div number-div"><input onblur="getVal7()" type="number" name="yellow" id="yellow-7"></div></td>
+            <td><div class="purple-div number-div"><input onblur="getVal7()" type="number" name="purple" id="purple-7"></div></td>
+            <td><div class="green-div number-div"><input onblur="getVal7()" type="number" name="green" id="green-7"></div></td>
+            <td><div class="sigma-div"><p id="sump7"></p></div></td>
+        </tr>
+    </table>
+       <script src="index.js"></script>
+</body>
+</html>
