@@ -1,1 +1,1 @@
-# 7Wonders-Scoresheet
+# 7 Wonders-Scoresheet
